@@ -1,8 +1,12 @@
+#include <cstdint>
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ Éú³ÉµÄ°üº¬ÎÄ¼ş¡£
-// ¹© MakerFrameLauncherV2.rc Ê¹ÓÃ
+// Microsoft Visual C++ ç”Ÿæˆçš„åŒ…å«æ–‡ä»¶ã€‚
+// ä¾› MakerFrameLauncherV2.rc ä½¿ç”¨
 //
-#define IDI_ICON1                       101
+enum : std::uint8_t{
+	idi_icon1 = 101,
+	stl_compiler_preprocessor = 0
+};
 
 // Next default values for new objects
 // 

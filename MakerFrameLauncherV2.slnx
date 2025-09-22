@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="MakerFrameLauncherV2.vcxproj" />
+  <Project Path="MakerFrameLauncherV2.vcxproj" Id="0420ea7c-86c9-466f-a8e6-1acbaef63a51" />
 </Solution>
