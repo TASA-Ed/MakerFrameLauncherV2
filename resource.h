@@ -5,7 +5,7 @@
 //
 enum : std::uint8_t{
 	idi_icon1 = 101,
-	stl_compiler_preprocessor = 0
+	stl_compiler_preprocessor = 1
 };
 
 // Next default values for new objects

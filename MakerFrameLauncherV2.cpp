@@ -97,7 +97,7 @@ int main(HINSTANCE, HINSTANCE, LPSTR, int) {
         return 1;
     }
 
-    write_log(L"[INFO] 成功启动 MakerFrame.exe. PID=" + std::to_wstring(static_cast<long long>(pi.dwProcessId)));
+    write_log(L"[INFO] 成功启动 MakerFrame.exe. (PID=" + std::to_wstring(static_cast<long long>(pi.dwProcessId)) + L")");
 	// 退出
     CloseHandle(pi.hProcess);
     CloseHandle(pi.hThread);
