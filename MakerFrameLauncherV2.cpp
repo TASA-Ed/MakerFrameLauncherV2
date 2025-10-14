@@ -1,7 +1,7 @@
 #include <windows.h>
 #include <fstream>
 #include <sstream>
-#include <chrono>
+#pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
 
 namespace
 {
@@ -37,7 +37,7 @@ namespace
     // 写日志
     void write_log(const std::wstring& message) {
         // 格式化日志行
-        std::string line = ws_to_utf8(L"["+get_timestamp()+L"] "+message);
+        std::string line = ws_to_utf8(get_timestamp()+L" "+message);
         // 确保以换行符结尾
         if (line.empty() || line.back() != '\n') line += '\n';
         std::ofstream ofs;
@@ -78,7 +78,7 @@ namespace
     }
 }
 
-int main(HINSTANCE, HINSTANCE, LPSTR, int) {
+int main() {
     write_log(L"[INFO] MakerFrameLauncherV2 已启动 Powered By TASA-Ed.");
     // 设置 PATH 环境变量
     const wchar_t* paths[] = {
